@@ -1,0 +1,141 @@
+/* Your Website Styles */
+
+body{
+  background: url("../img/sandpaper.png");
+  background-size: 10.875em 15.625em;
+}
+
+/*header*/
+
+.header div p{
+  font-size: 0;
+  color: transparent;
+}
+
+.header{
+  background: url("../img/tweed.png");
+  margin-top: .5em;
+  border-radius: 0 1.5em;
+}
+
+.header div{
+  text-align:center;
+}
+
+.header div img{
+  margin: 1em 1em 0 1em;
+}
+
+.header nav{
+  float: right;
+  margin-top: 11.25em;
+}
+
+.header ul{
+  display: block;
+  list-style: none; 
+}
+
+.header li{
+  float: right;
+  display:list-item;
+}
+
+.header a{
+  text-decoration: none;
+  color: #FFF;
+  padding: 1em;
+  transition: border .25s;
+}
+
+a[alt="home"]{
+  border-bottom: solid #E14938 3px;
+}
+
+a[alt="home"]:hover{
+  color: #E14938;
+  border-bottom: solid #E14938 7px;
+}
+
+a[alt="resume"]{
+  border-bottom: solid #00ACED 3px;
+}
+
+a[alt="resume"]:hover{
+  color: #00ACED;
+  border-bottom: solid #00ACED 7px;
+}
+
+a[alt="image"]{
+  border-bottom: solid #e44d26 3px;
+}
+
+a[alt="image"]:hover{
+  color: #e44d26;
+  border-bottom: solid #e44d26 7px;
+}
+/*end header*/
+
+/*Index*/
+h4 div{
+  text-align:center;
+  background:red;
+}
+
+h4 img[alt*="me"]{
+  border: solid #000 5px;
+}
+
+/*End Index*/
+
+/* Gallery Stying */
+img[alt="thumb"]{
+  margin-left:.5em;
+}
+
+.gallery .control-button {
+  color: #ccc;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.gallery .control-button:hover {
+  color: white;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/*
+  Theme controls how everything looks in Gallery CSS.
+*/
+.gallery {
+  position: relative;
+}
+
+.gallery .item {
+  height: 400px;
+  margin-bottom: .5em;
+  padding: 20px 0 20px 0;
+  overflow: hidden;
+  text-align: center;
+  background: url("../img/tweed.png");
+  border-radius: 1.5em;
+}
+
+.gallery .controls {
+  position: absolute;
+  bottom: -120px;
+  width: 100%;
+  text-align: center;
+}
+
+.gallery .controls img {
+  border: 5px solid #000;
+}
+
+.gallery .control-button {
+  display: inline-block;
+  margin: 0 .02em;
+  font-size: 3em;
+  text-align: center;
+  text-decoration: none;
+  transition: color .1s;
+}
