@@ -5,6 +5,21 @@ body{
   background-size: 10.875em 15.625em;
 }
 
+#home a[alt="home"]{
+  color: #E14938;
+  border-bottom: solid #E14938 7px;
+}
+
+#resume a[alt="resume"]{
+  color: #00ACED;
+  border-bottom: solid #00ACED 7px;
+}
+
+#gallery a[alt="image"]{
+  color: #e44d26;
+  border-bottom: solid #e44d26 7px;
+}
+
 /*header*/
 
 .header div p{
@@ -79,11 +94,36 @@ a[alt="image"]:hover{
 /*Index*/
 h4 div{
   text-align:center;
-  background:red;
 }
 
-h4 img[alt*="me"]{
-  border: solid #000 5px;
+img[alt="Its me"]{
+    display: inline-block;
+    margin: .313em;
+    padding: .625em;
+    border: solid 1px #000;
+    background-color: #5F5353;
+    box-shadow: 1px 1px .375em #888888;
+    border-radius:10px;
+}
+
+.content h4{
+  margin-top: 5em;
+  text-align: center;
+}
+
+.content div{
+  padding: 1em 0 0 2em;
+}
+
+.content div div{
+  text-align:center;
+}
+
+.content a{
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #E14938;
+  margin: 0 .5em 0 .5em;
 }
 
 /*End Index*/
