@@ -20,6 +20,36 @@ body{
   border-bottom: solid #e44d26 7px;
 }
 
+h1{
+  font: 400 3em/1.3 'Berkshire Swash', Helvetica, sans-serif;
+  font-size: 3em;
+}
+
+h2{
+  font-size: 2em;
+  font-family: 'NovecentowideBookBold', sans-serif;
+}
+
+h3{
+  font-size: 1.5em;
+  font-family: 'Gabriela', serif;
+}
+
+h5{
+  font-size: 1.25em;
+  font-family: courier;
+}
+
+blockquote{
+  font-size: 2em;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+p{
+  font-family: 'Lato', sans-serif;
+}
+
 /*header*/
 
 .header div p{
@@ -136,7 +166,7 @@ img[alt="Its me"]{
 
 /*Resume*/
 
-.nav a{
+.nav a[href*="#"]{
   display: inline-block;
   float:left;
   text-decoration:none;
@@ -147,43 +177,45 @@ img[alt="Its me"]{
   border-radius: 1em 0 0 0;
 }
 
-.nav a:hover{
+.nav a[href*="#"]:hover{
   background: url("../img/zwartevilt.png");
 }
 
-.nav :target{
+.nav a[href*="#"]:target{
   background: url("../img/zwartevilt.png");
 }
 
 #ci:target ~ .resume .contact{
-  color:white;
+  font-size: 24px;
 }
 
 #sk:target ~ .resume .skills{
-  color:white;
+  font-size: 24px;
 }
 
 #ex:target ~ .resume .experience{
-  color:white;
+  font-size: 24px;
 }
 
-#ed:target ~ .resume .education{
-  color:white;
+#ed:target ~ .resume .education p{
+  font-size: 24px;
 }
 
 .resume{
-  color:transparent;
+  color: #FFF;
+  font-size: 0;
   background: url(../img/zwartevilt.png);
   border-radius: 0 0 1em 1em;
   position: relative;
   display:block;
-  height:23.5em;
-  overflow-y:auto;
+  height:375px;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 
 .resume div{
   text-align: center;
+  padding-top:2em;
   
   position: absolute;
   top: 0;
