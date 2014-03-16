@@ -128,6 +128,51 @@ img[alt="Its me"]{
 
 /*End Index*/
 
+/*Resume*/
+
+.nav a{
+  display: inline-block;
+  float:left;
+  text-decoration:none;
+  color: #FFF;
+  background: url("../img/tweed.png");
+  padding: .5em;
+  width: 9em;
+  border-radius: 1em 0 0 0;
+}
+
+.nav a:hover{
+  background: url("../img/zwartevilt.png");
+}
+
+.nav :target{
+  background: url("../img/zwartevilt.png");
+}
+
+#ci:hover .contact p{
+  color: white;
+}
+
+.resume{
+  color:transparent;
+  background: url(../img/zwartevilt.png);
+  border-radius: 0 0 1em 1em;
+  position: relative;
+  display:block;
+  height:16.25em;
+  overflow:auto;
+}
+
+.resume div{
+  text-align: center;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*End Resume*/
+
 /* Gallery Stying */
 img[alt="thumb"]{
   margin-left:.5em;
