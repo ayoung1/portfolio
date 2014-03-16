@@ -60,7 +60,8 @@ body{
   text-decoration: none;
   color: #FFF;
   padding: 1em;
-  transition: border .25s;
+  transition: border .25s,
+        color .25s;
 }
 
 a[alt="home"]{
@@ -124,6 +125,11 @@ img[alt="Its me"]{
   font-size: 1.5em;
   color: #E14938;
   margin: 0 .5em 0 .5em;
+  transition: color .25s;
+}
+
+.content a:hover{
+  color: #00ACED;
 }
 
 /*End Index*/
@@ -149,8 +155,20 @@ img[alt="Its me"]{
   background: url("../img/zwartevilt.png");
 }
 
-#ci:hover .contact p{
-  color: white;
+#ci:target ~ .resume .contact{
+  color:white;
+}
+
+#sk:target ~ .resume .skills{
+  color:white;
+}
+
+#ex:target ~ .resume .experience{
+  color:white;
+}
+
+#ed:target ~ .resume .education{
+  color:white;
 }
 
 .resume{
@@ -159,8 +177,9 @@ img[alt="Its me"]{
   border-radius: 0 0 1em 1em;
   position: relative;
   display:block;
-  height:16.25em;
-  overflow:auto;
+  height:23.5em;
+  overflow-y:auto;
+  overflow-x: hidden;
 }
 
 .resume div{
