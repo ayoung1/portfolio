@@ -50,6 +50,10 @@ p{
   font-family: 'Lato', sans-serif;
 }
 
+ul{
+  list-style-type:none;
+}
+
 /*header*/
 
 .header div a{
