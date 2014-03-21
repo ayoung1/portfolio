@@ -52,9 +52,12 @@ p{
 
 /*header*/
 
-.header div p{
+.header div a{
+  display:inline-block;
   font-size: 0;
-  color: transparent;
+  background: url(../img/Logo-Big.png) no-repeat;
+  height: 205px;
+  width: 452px;
 }
 
 .header{
@@ -155,11 +158,12 @@ img[alt="Its me"]{
   font-size: 1.5em;
   color: #E14938;
   margin: 0 .5em 0 .5em;
-  transition: color .25s;
+  transition: color .75s, background .75s;
 }
 
 .content a:hover{
-  color: #00ACED;
+  color: #FFF;
+  background: #E14938;
 }
 
 /*End Index*/
