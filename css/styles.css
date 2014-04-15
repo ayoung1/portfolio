@@ -5,7 +5,12 @@ body{
   background-size: 10.875em 15.625em;
 }
 
-#home a[alt="home"]{
+#index a[alt="index"]{
+  color: cornflowerblue;
+  border-bottom: solid cornflowerblue 7px;
+}
+
+#bio a[alt="bio"]{
   color: #E14938;
   border-bottom: solid #E14938 7px;
 }
@@ -101,11 +106,20 @@ ul{
         color .25s;
 }
 
-a[alt="home"]{
+a[alt="index"]{
+  border-bottom: solid cornflowerblue 3px;
+}
+
+a[alt="index"]:hover{
+  color: #E14938;
+  border-bottom: solid cornflowerblue 7px;
+}
+
+a[alt="bio"]{
   border-bottom: solid #E14938 3px;
 }
 
-a[alt="home"]:hover{
+a[alt="bio"]:hover{
   color: #E14938;
   border-bottom: solid #E14938 7px;
 }
@@ -178,21 +192,27 @@ a[href*="mailto"]{
   color:blue;
 }
 
+.tabs{
+  postion: absolute;
+}
+
+.tabs dd > a:hover,
 .tabs dd.active a{
-  background: black;
+  z-index:999;
+  box-shadow: 3px 3px 5px cornflowerblue;
+  background: #333;
   color: beige;
 }
 
 .tabs dd > a{
+  position: relative;
   border-radius:1em 1em 0 0;
+  background: beige;
+  z-index: 0;
   
-  background: biege;
-  transition: background 1s, color 1s;
-}
-
-.tabs dd > a:hover{
-  background: black;
-  color: beige;
+  transition: background 1s, 
+              color 1s, 
+              box-shadow 1s;
 }
 
 .nav div{
