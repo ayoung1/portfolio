@@ -67,7 +67,7 @@ ul{
 .header{
   background: url("../img/tweed.png");
   margin-top: .5em;
-  border-radius: 0 1.5em;
+  border-radius: 1.5em 1.5em 0 0;
 }
 
 .header div{
@@ -80,7 +80,7 @@ ul{
 
 .header nav{
   float: right;
-  margin-top: 11.25em;
+  margin-top: 12em;
 }
 
 .header ul{
@@ -145,7 +145,7 @@ img[alt="Its me"]{
 }
 
 .content h4{
-  margin-top: 5em;
+  margin-top: 2em;
   text-align: center;
 }
 
@@ -157,7 +157,7 @@ img[alt="Its me"]{
   text-align:center;
 }
 
-.content a{
+#home .content a{
   text-decoration: none;
   font-size: 1.5em;
   color: #E14938;
@@ -165,7 +165,7 @@ img[alt="Its me"]{
   transition: color .75s, background .75s;
 }
 
-.content a:hover{
+#home .content a:hover{
   color: #FFF;
   background: #E14938;
 }
@@ -174,60 +174,40 @@ img[alt="Its me"]{
 
 /*Resume*/
 
-.nav a[href*="#"]{
-  display: inline-block;
-  float:left;
-  text-decoration:none;
-  color: #FFF;
-  background: url("../img/tweed.png");
-  padding: .5em;
-  width: 9em;
-  border-radius: 1em 0 0 0;
+a[href*="mailto"]{
+  color:blue;
 }
 
-.nav a[href*="#"]:hover{
-  background: url("../img/zwartevilt.png");
+.tabs dd.active a{
+  background: black;
+  color: beige;
 }
 
-.nav a[href*="#"]:target{
-  background: url("../img/zwartevilt.png");
-}
-
-#ci:target ~ .resume .contact{
-  font-size: 24px;
-}
-
-#sk:target ~ .resume .skills{
-  font-size: 24px;
-}
-
-#ex:target ~ .resume .experience{
-  font-size: 24px;
-}
-
-#ed:target ~ .resume .education p{
-  font-size: 24px;
-}
-
-.resume{
-  color: #FFF;
-  font-size: 0;
-  background: url(../img/zwartevilt.png);
-  border-radius: 0 0 1em 1em;
-  position: relative;
-  display:block;
-  height:375px;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-.resume div{
-  text-align: center;
-  padding-top:2em;
+.tabs dd > a{
+  border-radius:1em 1em 0 0;
   
-  position: absolute;
-  top: 0;
-  left: 0;
+  background: biege;
+  transition: background 1s, color 1s;
+}
+
+.tabs dd > a:hover{
+  background: black;
+  color: beige;
+}
+
+.nav div{
+  background: beige;
+  border-radius:0 0 .5em .5em;
+  box-shadow: 0 0 1em 0;
+}
+
+.nav div h3{
+  text-align:center;  
+}
+
+.nav p,
+.nav ul{
+  margin-left: 5em;
 }
 
 /*End Resume*/

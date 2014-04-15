@@ -1,8 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html class="no-js" lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Resume</title>
+  <link rel="shortcut icon" href="http://www.placehold.it/16x16"/>
+
  
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
 
@@ -44,58 +46,54 @@
 		</nav>
 	</div>
 
+	<dl class="tabs" data-tab>
+	  <dd class="active"><a href="#panel2-1">Contact Info</a></dd>
+	  <dd><a href="#panel2-2">Skills</a></dd>
+	  <dd><a href="#panel2-3">Past Experience</a></dd>
+	  <dd><a href="#panel2-4">Education</a></dd>
+	</dl>
+	<div class="tabs-content nav">
+	  <div class="content active" id="panel2-1">
+	    <p>Phone: (425)345-7735</p>
+		<p> Email: <a href="mailto:aaron.young.0015@edmail.edcc.edu">aaron.young.0015@edmail.edcc.edu</a></p>
+	  </div>
+	  <div class="content" id="panel2-2">
+	    <ul>
+			<li><h3>Proficient knowledge of</h3></li>
+			<li>Microsoft Office programs</li>
+			<li>Java</li>
+			<li>C/C++</li>
+			<li>HTML/CSS</li>
+		</ul>
+	  </div>
+	  <div class="content" id="panel2-3">
+	    <h3>Game Samba(2012) - Internship</h3>
 
-		<div class="nav">
-			
-			<a href="#ci" id="ci">Contact Information</a>
-			<a href="#sk" id="sk">Skills</a>
-			<a href="#ex" id="ex">Experience</a>
-			<a href="#ed" id="ed">Education</a>		
-
-			<div class="resume grid_12">
-
-				<div class="contact grid_12">
-					<p>Phone: (425)345-7735</p>
-					<p>Email: aaron.young.0015@edmail.edcc.edu</p>
-				</div>
-
-				<div class="skills grid_12">
-					<ul>
-						<li><h3>Proficient knowledge of</h3></li>
-						<li>Microsoft Office programs</li>
-						<li>Java</li>
-						<li>C/C++</li>
-						<li>HTML/CSS</li>
-
-					</ul>
-				</div>
-
-				<div class="experience grid_12">
-					<h3>Game Samba(2012) - Internship</h3>
-
-					<p>Test and review newly acquired games</p>
-					<p>Correct text server entries</p>
-									
-					<h3>
-						Toys&quot;R&quot;Us(2009) - Part Time
-					</h3>
-
-					<p>Cashier</p>
-					<p>Stocking</p>
+		<p>Test and review newly acquired games</p>
+		<p>Correct text server entries</p>
 					
-					<h3>
-						Personal Gardener(2010-2012) - Part Time
-					</h3>
-				</div>
+		<h3>
+			Toys&quot;R&quot;Us(2009) - Part Time
+		</h3>
+		<p>Cashier</p>
+		<p>Stocking</p>
+				
+		<h3>
+			Personal Gardener(2010-2012) - Part Time
+		</h3>
+	  </div>
+	  <div class="content" id="panel2-4">
+	    <p>Associate of Arts - Edmonds Community College 2012</p>
+		<p>Currently pursuing a Bachelor of Computer Information Systems at Eastern Washington University</p>
+	  </div>
+	</div>
+	<div class="clear"></div>
 
-				<div class="education grid_12">
-					<p>Associate of Arts - Edmonds Community College 2012</p>
-					<p>Currently pursuing a Bachelor of Computer Information Systems at Eastern Washington University</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="clear"></div>
+	<script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
 </div>
 
 </body>
