@@ -237,53 +237,24 @@ a[href*="mailto"]{
 /*End Resume*/
 
 /* Gallery Stying */
-img[alt="thumb"]{
-  margin-left:.5em;
+
+.gnav{
+  text-align:center;
 }
 
-.gallery .control-button {
-  color: #ccc;
-  color: rgba(255, 255, 255, 0.4);
+.gbutton{
+  border: 1em solid white;
 }
 
-.gallery .control-button:hover {
-  color: white;
-  color: rgba(255, 255, 255, 0.8);
+.gnav p{
+  display:inline;
 }
 
-/*
-  Theme controls how everything looks in Gallery CSS.
-*/
-.gallery {
-  position: relative;
+.gnav .g:before{
+  content: '\25CF';
 }
 
-.gallery .item {
-  height: 400px;
-  margin-bottom: .5em;
-  padding: 20px 0 20px 0;
-  overflow: hidden;
-  text-align: center;
-  background: url("../img/tweed.png");
-  border-radius: 1.5em;
-}
-
-.gallery .controls {
-  position: absolute;
-  bottom: -120px;
-  width: 100%;
-  text-align: center;
-}
-
-.gallery .controls img {
-  border: 5px solid #000;
-}
-
-.gallery .control-button {
-  display: inline-block;
-  margin: 0 .02em;
-  font-size: 3em;
-  text-align: center;
-  text-decoration: none;
-  transition: color .1s;
+.gnav .gend:before,
+.gnav .gend:after{
+  content: '\25CF';
 }

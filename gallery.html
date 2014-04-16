@@ -4,8 +4,6 @@
   <meta charset="UTF-8" />
   <title>Gallery</title>
   <link rel="shortcut icon" href="favicon.ico"/>
-
-  	<!--http://benschwarz.github.io/gallery-css/-->
 	
  	<link rel="icon" href="favicon.ico">
  
@@ -22,49 +20,70 @@
 <body id="gallery">
 	<div class="container">
 	<!-- Head -->
-	<div class="grid_12 header">
-		<div class="grid_7 alpha">
-			<a href="index.html">Aaron Young</a>
+		<div class="grid_12 header">
+			<div class="grid_7 alpha">
+				<a href="index.html">Aaron Young</a>
+			</div>
+			<nav class="grid_5 omega">
+				<ul>
+				    <li>
+				    	<a href="gallery.html" alt="image">GALLERY</a>
+				    </li>
+				    <li>
+				    	<a href="resume.html" alt="resume">RESUME</a>
+				    </li>
+				    <li>
+			    		<a href="bio.html" alt="bio">BIO</a>
+			    	</li>
+			    	<li>
+			    		<a href="index.html" alt="index">HOME</a>
+			    	</li>
+				</ul>
+			</nav>
 		</div>
-		<nav class="grid_5 omega">
-			<ul>
-			    <li>
-			    	<a href="gallery.html" alt="image">GALLERY</a>
-			    </li>
-			    <li>
-			    	<a href="resume.html" alt="resume">RESUME</a>
-			    </li>
-			    <li>
-		    		<a href="bio.html" alt="bio">BIO</a>
-		    	</li>
-		    	<li>
-		    		<a href="index.html" alt="index">HOME</a>
-		    	</li>
-			</ul>
-		</nav>
-	</div>
 	<!-- Head -->
 
-	<dl class="tabs vertical" data-tab>
-	  <dd class="active"><a href="#panel1a"><img src="img/3-thumb.png" alt="thumb"></a></dd>
-	  <dd><a href="#panel2a"><img src="img/2-thumb.png" alt="thumb"></a></dd>
-	  <dd><a href="#panel3a"><img src="img/1-thumb.png" alt="thumb"></a></dd>
-	  <dd><a href="#panel4a"><img src="img/4-thumb.png" alt="thumb"></a></dd>
-	</dl>
-	<div class="tabs-content vertical">
-	  <div class="content active" id="panel1a">
-	    <p><img src="img/3.png" alt=""></p>
-	  </div>
-	  <div class="content" id="panel2a">
-	    <p><img src="img/2.png" alt=""></p>
-	  </div>
-	  <div class="content" id="panel3a">
-	    <p><img src="img/1.png" alt=""></p>
-	  </div>
-	  <div class="content" id="panel4a">
-	    <p><img src="img/4.png" alt=""></p>
-	  </div>
-	</div>
+		<ul class="active" data-orbit>
+		  <li data-orbit-slide="headline-1">
+		    <img src="img/3.png" alt="">
+		    <div class="orbit-caption">
+		      Caption One.
+		    </div>
+		  </li>
+		  <li data-orbit-slide="headline-2">
+		    <img src="img/2.png" alt="">
+		    <div class="orbit-caption">
+		      Caption Two.
+		    </div>
+		  </li>
+		  <li data-orbit-slide="headline-3">
+		    <img src="img/1.png" alt="">
+		    <div class="orbit-caption">
+		      Caption Three.
+		    </div>
+		  </li>
+		  <li data-orbit-slide="headline-4">
+		    <img src="img/4.png" alt="">
+		    <div class="orbit-caption">
+		      Caption Three.
+		    </div>
+		  </li>
+		</ul>
+
+		<div class="gnav">
+			<a data-orbit-link="headline-1">
+			  <p class="g"><img class="gbutton" src="img/3-thumb.png" alt="thumb"></p>
+			</a>
+			<a data-orbit-link="headline-2">
+			  <p class="g"><img class="gbutton" src="img/2-thumb.png" alt="thumb"></p>
+			</a>
+			<a data-orbit-link="headline-3">
+			  <p class="g"><img class="gbutton" src="img/1-thumb.png" alt="thumb"></p>
+			</a>
+			<a data-orbit-link="headline-4">
+			  <p class="gend"><img class="gbutton" src="img/4-thumb.png" alt="thumb"></p>
+			</a>
+		</div>
 
 		<!-- Clearfix -->
 		<div class="clear"></div>
