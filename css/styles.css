@@ -37,7 +37,8 @@ h2{
 
 h3{
   font-size: 1.5em;
-  font-family: 'Gabriela', serif;
+  font-family: 'Calibri', serif;
+  font-weight: bold;
 }
 
 h5{
@@ -59,6 +60,8 @@ ul{
   list-style-type:none;
 }
 
+/*End website wide styles*/
+
 /*header*/
 
 .header div a{
@@ -73,6 +76,7 @@ ul{
   background: url("../img/tweed.png");
   margin-top: .5em;
   border-radius: 1.5em 1.5em 0 0;
+  box-shadow: 0 0 1em #000 inset;
 }
 
 .header div{
@@ -111,7 +115,7 @@ a[alt="index"]{
 }
 
 a[alt="index"]:hover{
-  color: #E14938;
+  color: cornflowerblue;
   border-bottom: solid cornflowerblue 7px;
 }
 
@@ -153,8 +157,8 @@ img[alt="Its me"]{
     margin: .313em;
     padding: .625em;
     border: solid 1px #000;
-    background-color: #5F5353;
-    box-shadow: 1px 1px .375em #888888;
+    background-color: #555;
+    box-shadow: 0 0 .5em #000 inset;
     border-radius:10px;
 }
 
@@ -171,7 +175,7 @@ img[alt="Its me"]{
   text-align:center;
 }
 
-#home .content a{
+#bio .content a{
   text-decoration: none;
   font-size: 1.5em;
   color: #E14938;
@@ -179,7 +183,7 @@ img[alt="Its me"]{
   transition: color .75s, background .75s;
 }
 
-#home .content a:hover{
+#bio .content a:hover{
   color: #FFF;
   background: #E14938;
 }
@@ -192,22 +196,22 @@ a[href*="mailto"]{
   color:blue;
 }
 
-.tabs{
+#resume .tabs{
   postion: absolute;
 }
 
-.tabs dd > a:hover,
-.tabs dd.active a{
+#resume .tabs dd > a:hover,
+#resume .tabs dd.active a{
   z-index:999;
-  box-shadow: 3px 3px 5px cornflowerblue;
+  box-shadow: 3px 3px 5px #00ACED;
   background: #333;
-  color: beige;
+  color: #fff;
 }
 
-.tabs dd > a{
+#resume .tabs dd > a{
   position: relative;
   border-radius:1em 1em 0 0;
-  background: beige;
+  background: #fff;
   z-index: 0;
   
   transition: background 1s, 
@@ -216,7 +220,7 @@ a[href*="mailto"]{
 }
 
 .nav div{
-  background: beige;
+  background: #fff;
   border-radius:0 0 .5em .5em;
   box-shadow: 0 0 1em 0;
 }
