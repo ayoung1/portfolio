@@ -1,3 +1,23 @@
+#container{
+	position: relative;
+}
+
+#top, #bottom{
+	position: absolute;
+}
+
+#bottom{
+	height: 42em;
+	background: #fff;
+	opacity: 0;
+}
+
+/*Nav Bar*/
+.top-bar, .top-bar-section ul, .top-bar-section li:not(.has-form) a:not(.button), .top-bar .name h1 a{
+	background: rgba(255,255,255,.1);
+	color: #000;
+}
+
 .header{
 	background: url(../img/DSC_0015-2.jpg);
 	background-position: 0 -25em;
@@ -9,4 +29,15 @@
 .thumbnails{
 	overflow: scroll;
 	height:31.25em;
+}
+
+.center{
+	text-align: center;
+}
+
+#lorem{
+	font-size: 2em;
+	line-height: 250%;
+	padding: 1em 7.25em;
+	font-family: 'Pinyon Script', cursive;
 }
