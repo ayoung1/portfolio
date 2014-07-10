@@ -22,24 +22,13 @@ $(document).foundation({
 /*Menu Scroll*/
 var scrollspeed = 1000;
 
-$("#aboutb").click(function()
-{
-    scrollTo($("#about"), scrollspeed)
-});
-
-$("#resumeb").click(function()
-{
-	scrollTo($("#resume"), scrollspeed)
-});
-
-$("#galleryb").click(function()
-{
-	scrollTo($("#index"), scrollspeed)
-});
-
 /*Show Gallery*/
-$("#galleryb").click(function(){
-	$("#top").toggleClass("move");
+$("#button").click(function(){
+	$("#button").toggleClass("buttonon buttonoff");
+  $("#bottom").toggleClass("bottomon bottomoff");
+  $("#top").toggleClass("topon topoff");
+  $("#container").toggleClass("containerheight");
+  scrollTo($("#container"), scrollspeed)
 
 });
 

@@ -8,12 +8,65 @@ ul{
 
 #top, #bottom{
 	position: absolute;
+	width: 100%;
+}
+
+#top{
+	transition:all 2s;
+}
+
+.topon{
+	left:0%;
+}
+
+.topoff{
+	left:-100%;
+	overflow:hidden;
+}
+
+#button{
+	position:fixed;
+	z-index: 9999;
+	padding:.5em .75em;
+	background: transparent;
+	top:3%;
+
+	
+	transition: all 2s;
+}
+
+.buttonoff{
+	right: 1%;
+	color: white;
+	border: solid white .2em;
+}
+
+.buttonon{
+	right:96%;
+	border: solid black .2em;
+	color:black;
+	
+	transform: rotate(-45deg);
+	-webkit-transform:rotate(-45deg);
+}
+
+.containerheight{
+	height: 42em;
+	overflow:hidden;
 }
 
 #bottom{
-	height: 42em;
 	background: #fff;
-	opacity: 0;
+
+	transition:all 2s;
+}
+
+.bottomon{
+	left:0%;
+}
+
+.bottomoff{
+	left:-100%;
 }
 
 #lorem{
