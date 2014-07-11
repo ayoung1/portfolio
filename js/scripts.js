@@ -28,8 +28,6 @@ $("#button").click(function(){
   $("#bottom").toggleClass("bottomon bottomoff");
   $("#top").toggleClass("topon topoff");
   $("#container").toggleClass("containerheight");
-  scrollTo($("#container"), scrollspeed)
-
 });
 
 /*Functions*/
