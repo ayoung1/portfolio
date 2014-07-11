@@ -1,3 +1,8 @@
+html, body{
+	height:100%;
+	overflow-x:hidden;
+}
+
 ul{
 	list-style-type: none;
 }
@@ -12,6 +17,8 @@ ul{
 }
 
 #top{
+	height:auto;
+
 	transition:all 2s;
 }
 
@@ -21,7 +28,6 @@ ul{
 
 .topoff{
 	left:-100%;
-	overflow:hidden;
 }
 
 #button{
@@ -36,7 +42,7 @@ ul{
 }
 
 .buttonoff{
-	right: 1%;
+	right: 2%;
 	color: white;
 	border: solid white .2em;
 }
@@ -66,7 +72,7 @@ ul{
 }
 
 .bottomoff{
-	left:-100%;
+	left:100%;
 }
 
 #lorem{
@@ -109,12 +115,18 @@ ul{
 .thumbnails{
 	overflow: scroll;
 	height:31.25em;
+	margin-top:1em;
 }
 
 .center{
 	text-align: center;
 }
 
-.move{
-	left:100000px;
+.orbit-container{
+	margin-top:1em;
+}
+
+.orbit-container img{
+	display:block;
+	margin: 0 auto;
 }
